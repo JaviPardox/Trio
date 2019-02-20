@@ -10,7 +10,7 @@ int main()
 {
   int numA, numB, numC;
   cout<<"Enter any three numbers: ";
-  cin>>numA>>numB>>numC;
+  cin>>numA>>numB>>numC;              //input to the program
 
   sortDescending(numA, numB, numC);
   
@@ -19,7 +19,7 @@ int main()
   return 0;
 }
 
-void sortDescending(int &first, int &second, int &third)
+void sortDescending(int &first, int &second, int &third) //sorting in descending order
 {
   if( first < third )
   {
@@ -35,7 +35,7 @@ void sortDescending(int &first, int &second, int &third)
   }
 }
 
-void swap(int &first, int &second)
+void swap(int &first, int &second)   //auxiliar function to swap numbers
 {
   int temp = first;
   first = second;
